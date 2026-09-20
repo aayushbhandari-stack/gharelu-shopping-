@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - Gharelu Shopping</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/gharelu shopping (1).png"
+                    alt="Gharelu Shopping">
+
+            </a>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </nav>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="header-right">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Search products..."
+                >
+
+                <button type="button">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <a href="profile.html"
+               class="profile active-profile">
+
+                <i class="fa-solid fa-user"></i>
+
+            </a>
+
+
+            <!-- CART -->
+
+            <a href="cart.html"
+               class="cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         PROFILE PAGE
+    ========================== -->
+
+    <main class="profile-page">
+
+
+        <div class="profile-container">
+
+
+            <!-- PROFILE HEADER -->
+
+            <div class="profile-header">
+
+
+                <div class="profile-avatar">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+
+                <h1>
+                    My Profile
+                </h1>
+
+
+                <p>
+                    Manage your Gharelu Shopping account
+                </p>
+
+
+            </div>
+
+
+
+            <!-- PROFILE INFORMATION -->
+
+            <div class="profile-information">
+
+
+                <h2>
+                    Personal Information
+                </h2>
+
+
+                <!-- NAME -->
+
+                <div class="profile-row">
+
+                    <div class="profile-icon">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Full Name
+                        </span>
+
+                        <strong>
+                            Your Name
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="profile-row">
+
+                    <div class="profile-icon">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Email
+                        </span>
+
+                        <strong>
+                            yourname@gmail.com
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="profile-row">
+
+                    <div class="profile-icon">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Phone
+                        </span>
+
+                        <strong>
+                            98XXXXXXXX
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ADDRESS -->
+
+                <div class="profile-row">
+
+                    <div class="profile-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Address
+                        </span>
+
+                        <strong>
+                            Surkhet, Nepal
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 ACTION BUTTONS
+            ========================== -->
+
+            <div class="profile-actions">
+
+
+                <button
+                    class="edit-profile-btn"
+                    onclick="editProfile()">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Edit Profile
+
+                </button>
+
+
+                <a
+                    href="cart.html"
+                    class="orders-btn">
+
+                    <i class="fa-solid fa-box"></i>
+
+                    My Cart
+
+                </a>
+
+
+                <button
+                    class="logout-btn"
+                    onclick="logout()">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+    <script>
+
+        function editProfile() {
+
+            alert("Edit Profile feature will be added soon.");
+
+        }
+
+
+        function logout() {
+
+            let confirmLogout =
+                confirm("Are you sure you want to logout?");
+
+            if (confirmLogout) {
+
+                alert("You have been logged out.");
+
+                window.location.href = "index.html";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

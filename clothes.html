@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Clothing Products - Gharelu Shopping</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/gharelu shopping (1).png"
+                    alt="Gharelu Shopping">
+
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="categories.html">
+                Categories
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="contact.html">
+                Contact Us
+            </a>
+
+        </nav>
+
+
+        <!-- =========================
+             RIGHT SIDE
+        ========================== -->
+
+        <div class="header-right">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Search products..."
+                >
+
+                <button type="button">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <a href="profile.html" class="profile">
+
+                <i class="fa-solid fa-user"></i>
+
+            </a>
+
+
+            <!-- CART -->
+
+            <a href="cart.html" class="cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+
+            </a>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CLOTHING SECTION
+    ========================== -->
+
+    <section class="categories">
+
+
+        <h1>
+            Clothing Products
+        </h1>
+
+
+        <p>
+            Explore our clothing collection.
+        </p>
+
+
+
+        <!-- =========================
+             PRODUCT CONTAINER
+        ========================== -->
+
+        <div class="category-container">
+
+
+            <!-- =========================
+                 PRODUCT 1
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/tshirt.jpg"
+                    alt="T-Shirt"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        T-Shirt
+                    </h2>
+
+
+                    <p>
+                        Rs. 799
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'T-Shirt',
+                            799,
+                            'images/tshirt.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 2
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/shirt.jpg"
+                    alt="Casual Shirt"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Casual Shirt
+                    </h2>
+
+
+                    <p>
+                        Rs. 1,299
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Casual Shirt',
+                            1299,
+                            'images/shirt.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 3
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/jeans.jpg"
+                    alt="Jeans"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Jeans
+                    </h2>
+
+
+                    <p>
+                        Rs. 1,599
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Jeans',
+                            1599,
+                            'images/jeans.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 4
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/hoodie.jpg"
+                    alt="Hoodie"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Winter Hoodie
+                    </h2>
+
+
+                    <p>
+                        Rs. 2,499
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Winter Hoodie',
+                            2499,
+                            'images/hoodie.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 5
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/jacket.jpg"
+                    alt="Jacket"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Denim Jacket
+                    </h2>
+
+
+                    <p>
+                        Rs. 2,999
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Denim Jacket',
+                            2999,
+                            'images/jacket.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 6
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/pants.jpg"
+                    alt="Casual Pants"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Casual Pants
+                    </h2>
+
+
+                    <p>
+                        Rs. 1,599
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Casual Pants',
+                            1599,
+                            'images/pants.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 7
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/sweater.jpg"
+                    alt="Sweater"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Sweater
+                    </h2>
+
+
+                    <p>
+                        Rs. 1,899
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Sweater',
+                            1899,
+                            'images/sweater.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 PRODUCT 8
+            ========================== -->
+
+            <div class="category-card">
+
+
+                <img
+                    src="images/trouser.jpg"
+                    alt="Trouser"
+                >
+
+
+                <div class="category-info">
+
+
+                    <h2>
+                        Formal Trouser
+                    </h2>
+
+
+                    <p>
+                        Rs. 1,799
+                    </p>
+
+
+                    <button
+                        class="add-cart-btn"
+                        onclick="addToCart(
+                            'Formal Trouser',
+                            1799,
+                            'images/trouser.jpg'
+                        )">
+
+                        <i class="fa-solid fa-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
